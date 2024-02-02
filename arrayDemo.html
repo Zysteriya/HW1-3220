@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Demo Form</title>
+  </head>
+  <body>
+    <!--  Header for the array form   -->
+    <h1>Array Demo Form</h1>
+    <!-- usage of " POST " to allow the information to be passed to the  .php later -->
+    <form action="arrayDemo.php" method="post">
+      <!-- Required input field for number of Rows ( usage of required makes it so that informtation must be input)  -->
+      <label for="numRows">Number of Rows:</label>
+      <input type="number" name="numRows" id="numRows" required />
+      <br />
+
+      <!--   Required input field for number of Columns    -->
+      <label for="numCols">Number of Columns:</label>
+      <input type="number" name="numCols" id="numCols" required />
+      <br />
+
+      <!--   Required input field for minimum random value   -->
+      <label for="minValue">Min Random Value:</label>
+      <input type="number" name="minValue" id="minValue" required />
+      <br />
+
+      <!--   Required input field for maximum random value   -->
+      <label for="maxValue">Max Random Value:</label>
+      <input type="number" name="maxValue" id="maxValue" required />
+      <br />
+
+      <!--   Reset clears the form and will allow for new inputs   -->
+      <input type="reset" value="Reset" />
+
+      <!--   Submit pushes the data through to the .php  -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
